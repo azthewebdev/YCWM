@@ -96,17 +96,16 @@
       </div>
 
     <!-- ======= Our Team Section ======= -->
-    <section id="contact" class="contact serviceInformation">
+    <section id="contact" class="contact">
       <div class="container">
 
-        <div class="section-title" data-aos="fade-up" style="padding: 15px 0px 0px; text-align: left">
-          <h2>Need A Move Quote?</h2>
-          <p>One of our representatives will contact you with a quote immediately.</p>         
+        <div class="section-title" data-aos="fade-up" style="padding: 15px 0px 0px">
+          <h2>Free Quote</h2>         
         </div>
 
         <div class="row mt-5 justify-content-center" data-aos="fade-up">
-          <div class="col-lg-12">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+          <div class="col-lg-10">
+            <form role="form" class="php-email-form">
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your name" required>
@@ -119,21 +118,25 @@
                 <input type="text" class="form-control" name="subject" id="email" placeholder="Your email" required>
               </div>
               <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Description of move" required></textarea>
+                <select id="subjectSelect" class="form-select">
+                  <option default value="default">SELECT SERVICE ENQUIRY</option>
+                  <option value="Domestic & Commercial Relocation">Domestic & Commercial Relocation</option>
+                  <option value="Cargo & Logistics">Cargo & Logistics</option>
+                  <option value="Vehicle Recovery">Vehicle Recovery</option>     
+                  <option value="Executive Travel">Executive Travel</option>                                                 
+                </select>
+              </div>           
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" id="moveDescription" placeholder="Description of move" required></textarea>
               </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Get Free Quote</button></div>
+              <div class="text-center"><button id="submitForm">Get Free Quote</button></div>
             </form>
           </div>
 
         </div>
 
       </div>
-    </section><!-- End Contact Section -->    
+    </section><!-- End Contact Section --> 
 
   </main><!-- End #main -->
 
