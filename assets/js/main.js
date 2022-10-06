@@ -172,7 +172,7 @@
 
 
   //EmailJS
-  emailjs.init("CtgKUkwPUkzF4CDeG");
+  emailjs.init("735OYiBjHJlJiAqgJ");
 
   document.getElementById("submitForm").addEventListener("click",()=>{
     let userName = document.getElementById("name").value;
@@ -192,7 +192,7 @@
         person_tel: telNum,
         user_message: message
       }
-      emailjs.send("service_8m9ow0j", "template_kzpcn5e", param).then(function(response) {
+      emailjs.send("service_yacxo1r", "template_vnywtde", param).then(function(response) {
        alert("Thank you for your email! We will get back to you as soon as we can")
        location.reload()
     }, function(error) {
